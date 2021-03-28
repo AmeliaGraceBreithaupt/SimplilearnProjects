@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="functions.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload = function() {
+            retrieveFromSession();
+        }
+    </script>
+    <div style="border: solid black 2px; width:500px; padding: 30px;">
+        <h1 style="text-align: center; padding: 10px; color:cadetblue">Cart</h1>
+        <table class="table table-striped table-bordered" style="width:300px; margin-left: 60px;" id="itemList">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+            <br>
+            <br>
+            <a  href="shop.html">Back </a>
+    </div>
+</body>
+</html>

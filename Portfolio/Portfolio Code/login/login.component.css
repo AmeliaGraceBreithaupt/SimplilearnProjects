@@ -1,0 +1,19 @@
+#main{
+    border: 2px black solid;
+    width:400px;
+    height: 350px;
+    padding: 5px 20px;
+    margin: 20px;
+    background-color: black;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+label,a,p{
+    color: white;
+    margin: 8px;
+}
+.btn{
+    border-radius: 170px;
+}

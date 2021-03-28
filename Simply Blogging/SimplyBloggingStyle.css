@@ -1,0 +1,29 @@
+h2{
+    font-weight: bold;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+label{
+    font-weight:bold;
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+}
+.divBox{
+    border: Solid Black 3px;
+    margin: 20px;
+    padding: 25px;
+}
+.infoBox{
+    border: rgb(100, 100, 100) solid 2px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+    float: right;
+    width: 200px;
+}
+.underline{
+    text-decoration: underline;
+}
+#getInfo{
+    width: 300px;
+}

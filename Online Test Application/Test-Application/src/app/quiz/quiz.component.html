@@ -1,0 +1,34 @@
+<div>
+    <h2>Quiz Questions</h2>
+    <div>
+      <fieldset *ngFor="let q of questions"> 
+        <legend >{{q.question}}</legend> 
+        <div id="{{q.question}}1" name="1">
+            <input id="answer1" type="radio" name="{{q.question}}" #a1 required 
+                (click)="onSelect(q.question,1);"/>
+            <label for="answer1">{{q.answer1}}</label> 
+        </div>
+        <div id="{{q.question}}2" name="2">
+            <input type="radio" name="{{q.question}}" #a2 id="answer2"  required 
+                (click)="onSelect(q.question,2);">
+            <label for="answer2">{{q.answer2}}</label> 
+        </div>
+        <div id="{{q.question}}3" name="3">
+            <input type="radio" name="{{q.question}}" #a3 id="answer3" required 
+                (click)="onSelect(q.question,3);" >
+            <label for="answer3">{{q.answer3}}</label> 
+        </div>
+        <div id="{{q.question}}4" name="4">
+            <input type="radio" name="{{q.question}}" #a4 id="answer4" required 
+                (click)="onSelect(q.question,4);">
+            <label for="answer4">{{q.answer4}}</label> 
+        </div>
+      </fieldset> 
+    </div>
+      <input type="submit" value="Submit Answers" (click)="onSubmit()" [disabled]="click"/>
+    <div *ngIf="resultFlag">
+      <b [style.color]="resultColor()">Result: {{numCorrect}}/10</b>
+      <p style="font-size: x-small;">Note: green is good, red is bad</p>
+    </div>
+</div>
+      

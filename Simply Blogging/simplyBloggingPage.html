@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="simplyBloggingStyle.css"/>
+    <script src="simplyBlogging.js"></script>
+</head>
+<body>
+    <div class="divBox">
+        <h2>Simply Blogging</h2>
+        
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a href="#" class="nav-link underline">Add Blog</a> 
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link underline">Home</a> 
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link underline">About Us</a> 
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link underline">Contacts</a> 
+            </li>
+        </ul>
+        <br>
+        <!--Get Information from user-->
+        <form>
+            <div id="getInfo">
+                <label>Title:</label>
+                <input type="text" id="title" class="infoBox"/><br/>
+                <br>
+
+                <label>Article:</label>
+                <textarea type="text" id="article" class="infoBox"></textarea><br/>
+                <br>
+                <br>
+            </div>
+
+            <label>Add Image:</label><br>
+            <input type="file" id="image"/><br/>
+            <br>
+        </form>
+
+        <button type="button" class="btn btn-link" style="font-size: 20px;" onclick="addBlog()">Add Blog</button>
+        <br>
+        <br>
+        <br>
+        <!--Blog Post Containers from template-->
+        <div class="container">    
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="" id="imageInfo0" class="img-fluid" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title" id="titleInfo0"></h5>
+                      <p class="card-text" id="articleInfo0"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="" id="imageInfo1" class="img-fluid" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title" id="titleInfo1"></h5>
+                        <p class="card-text" id="articleInfo1"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img src="" id="imageInfo2" class="img-fluid" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title" id="titleInfo2"></h5>
+                        <p class="card-text" id="articleInfo2"></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+        </div>
+    </div>  
+</body>
+</html>

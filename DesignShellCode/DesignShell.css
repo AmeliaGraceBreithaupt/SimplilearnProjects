@@ -1,0 +1,23 @@
+.speechBubble{
+    border: solid black 3px;
+    border-radius: 100px;
+    width: 180px;
+    padding: 20px;
+    border-top-left-radius: 0px;
+    text-align-last:center;
+    text-anchor: middle;
+}
+
+.cursiveTitle {
+    text-align:center;
+    font-family: cursive;
+    font-weight: lighter;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.codeBox {
+    border:solid black 2px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+}

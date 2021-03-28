@@ -1,0 +1,8 @@
+<div>
+  <h1>Online Test Application</h1>
+  <input type="button" [value]="b1" (click)="change()"/>
+  <hr>
+  <div *ngIf="flag">
+    <app-quiz></app-quiz>
+  </div>
+</div>

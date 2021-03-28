@@ -1,0 +1,47 @@
+div{
+    border:solid 3px black;
+    width: 400px;
+    padding: 30px;
+}
+h2{
+    text-align: center;
+}
+a{
+    color: cornflowerblue;
+}
+label {
+    color:midnightblue;
+    font-weight: bold;
+    display:inline-block;
+    text-align: right;
+    float: left;
+}
+form{
+    width: 280px;
+}
+table,th,td{
+    border:solid black 2px;
+    border-collapse: collapse;
+}
+table{
+    width:100%;
+}
+th{
+    height: 70%;
+    background-color:rgb(7, 182, 182);
+}
+.largeLink {
+    font-size: 2em;
+}
+.infoBox{
+    border: black solid 3px;
+    display: inline-block;
+    text-align: left;
+    float: right;
+}
+.button{
+    display: inline-block;
+    float: right;
+    margin-inline: 30px 2px;
+    width: 65px;
+}

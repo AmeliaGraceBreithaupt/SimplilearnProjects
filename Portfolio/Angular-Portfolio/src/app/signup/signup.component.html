@@ -1,0 +1,26 @@
+<div class="col-sm-10" id="main">
+    <a style="float: right" href="login">Login</a>
+    <h2>Registration Form</h2>
+    
+    <form #signup="ngForm" (ngSubmit)="saveInfo(signup.value)">
+        <label>First name</label>
+        <input type="text" class="form-control" name="fname" ngModel/><br>
+        <label>Last name</label>
+        <input type="text" class="form-control" name="lname" ngModel/><br>
+        <label>Username</label>
+        <input type="text" class="form-control" name="uname" ngModel/><br>
+        <label>Password</label>
+        <input type="password" class="form-control" name="pwd" ngModel/><br>
+        
+        <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <input type="submit" class="btn btn-light" value="Register"/>
+              </div>
+              <div class="col-6">
+                <input type="reset" class="btn btn-light" value="Reset"/>
+              </div>
+            </div>
+        </div>
+    </form>
+</div>
